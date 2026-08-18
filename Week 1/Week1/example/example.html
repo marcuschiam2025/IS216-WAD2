@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- HTML elements / tags-->
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+
+    <h1>This is a blog</h1>
+
+    <main>
+
+    </main>
+    <div>
+
+    </div>
+    <select>
+        <option value="orange">Orange</option>
+        <option value="apple">Apple</option>
+        <option value="banana" selected>Banana</option>
+    </select> <br>
+
+    Name: <input type="text"/> <br>
+    Password: <input type="password" name="" id=""/> <br>
+    Age: <input type="number" name="" id="" min="0" max="75"/>
+
+    <div></div>
+    <div></div>
+    <div>
+        <p id="demo">demo</p>
+        <p id="sumParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quaerat autem exercitationem quasi nostrum necessitatibus 
+            neque cupiditate maiores nisi, similique officiis a, totam quis laboriosam, 
+            amet in quidem ad facere tenetur?</p>
+    </div>
+    
+
+    <button onclick="doSomething()">Click</button>
+
+    <script src="example.js"></script>
+    <script>
+        // JS code 
+        function doSomething(){
+            //document.getElementById("demo").innerText = "Hello Js";
+            let divEle = document.getElementsByTagName("div")[3];
+            let pEle = divEle.getElementsByTagName("p")[0];
+            pEle.innerText = "Hello JS";
+
+        }
+
+        // Click event listener for paragraph
+        let sumParagraph = document.getElementById("sumParagraph");
+        sumParagraph.addEventListener("click", function(){
+            let num1 = 5;
+            let num2 = 3;
+            let sum = sumTwoNumbers(num1, num2);
+            sumParagraph.innerText = "The sum of " + num1 + " and " + num2 + " is: " + sum;
+        });
+
+    </script>
+
+</body>
+</html>

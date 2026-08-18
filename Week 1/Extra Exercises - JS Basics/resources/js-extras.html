@@ -36,10 +36,10 @@
             function showExtra1() {
 
                // Add Code Here
-               let radius = 5; // Example radius
+               let radius = window.prompt("Provide a radius!");
                let area = Math.PI * Math.pow(radius, 2);
                let circumference = Math.PI * 2 * radius;
-               document.getElementById("demo").innerHTML = "Area: " + area + ", Circumference: " + circumference;
+               document.getElementById("demo").innerHTML = "Area: " + area.toFixed(2) + ", Circumference: " + circumference.toFixed(2);
 
             }
 
@@ -50,7 +50,14 @@
             function showExtra2() {
                 
                // Add Code Here
+               let char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
                let password = "";
+               for (let i = 0; i < 8; i++) {
+                    let x = char.charAt(Math.floor(Math.random()* (char.length - 0) + 0));
+                    password += x
+
+                }
+               document.getElementById("demo").innerHTML = password;
                
             }
 
@@ -66,7 +73,16 @@
             function showExtra3() {
               
                // Add Code Here
-               
+                let number = window.prompt("Provide a number!");
+                let sum = 0;
+                for (let i = 1; i < number; i++) {
+                    if (number % i === 0) {
+                        sum += i;
+                    }
+                }
+                let perfect = (sum === parseInt(number)) ? "Perfect Number" : "Not a Perfect Number";
+                
+                document.getElementById("demo").innerHTML = perfect;
             }
 
 
@@ -76,7 +92,9 @@
             function showExtra4() {
                 
                // Add Code Here
-               
+               let number = window.prompt("Provide a integer!");
+               let binary = parseInt(number).toString(2);
+               document.getElementById("demo").innerHTML = binary;
             }
 
             /* 5. Write a function that requests the user’s name 
@@ -96,6 +114,24 @@
             function showExtra5() {
                 
                // Add Code Here
+               let name = window.prompt("Provide your name!");
+               let nameArr = name.split(" ");
+               let surname = "";
+               let firstName = "";
+               if (nameArr.length == 2){
+                    surname = nameArr[1].toUpperCase();
+                    firstName = nameArr[0].charAt(0).toUpperCase() + nameArr[0].slice(1);
+                    document.getElementById("demo").innerHTML = surname + " " + firstName;
+               }
+               else {
+                    surname = nameArr[0].toUpperCase();
+                    for (let i = 1; i < nameArr.length; i++){
+                        firstName += nameArr[i].charAt(0).toUpperCase() + nameArr[i].slice(1) + " ";
+                    }
+                    //firstName = nameArr[1].charAt(0).toUpperCase() + nameArr[1].slice(1);
+                    document.getElementById("demo").innerHTML = surname + " " + firstName;
+               }
+               
                
             }
 
@@ -130,7 +166,16 @@
             function showExtra6() {
                 
                // Add Code Here
-               
+                let text = window.prompt("Provide a string!");
+                let st = window.prompt("Provide a starting character!");
+                let en = window.prompt("Provide an ending character!");
+                
+                if (text.indexOf(st) !== -1 && text.indexOf(en) !== -1 && text.indexOf(st) < text.indexOf(en)) {
+                    let substring = text.substring(text.indexOf(st), text.indexOf(en) + 1);
+                    document.getElementById("demo").innerHTML = "Substring [" + substring + "] is found";
+                } else {
+                    document.getElementById("demo").innerHTML = "No such substring";
+                }
 
             }
 
@@ -156,7 +201,19 @@
             function showExtra7() {
                 
                // Add Code Here
-               
+               let str1 = window.prompt("Provide the first string!");
+               let str2 = window.prompt("Provide the second string!");
+               let bingo = false;
+
+                for (let i = 0; i < str1.length; i++) {
+                      if (str2.includes(str1[i])) {
+                            bingo = true;
+                      } else {
+                            bingo = false;
+                            break;
+                      }
+                 }
+                 document.getElementById("demo").innerHTML = bingo ? "Bingo!" : "Nope :(";
             }
 
             /* 8. Write a function that requests two integers, 
