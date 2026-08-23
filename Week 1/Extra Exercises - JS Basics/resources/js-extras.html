@@ -231,6 +231,24 @@
             function showExtra8() {
                 
                // Add Code Here
+               let min = window.prompt("Please enter a min number!");
+               let max = window.prompt("Please enter a max number!");
+
+                if (isNaN(min) || isNaN(max)) {
+                      let error = window.alert("You did not enter valid number!");
+                      return;
+                }
+                else if (parseInt(min) > parseInt(max)) {
+                      let error = window.alert("Min number cannot be greater than max number!");
+                      return;
+                }
+
+                let perfectSquares = [];
+                for (let i = Math.ceil(Math.sqrt(min)); i <= Math.floor(Math.sqrt(max)); i++) {
+                      perfectSquares.push(i * i);
+                }
+                document.getElementById("demo").innerHTML = perfectSquares.join(" ");
+
                
             }
 
@@ -253,7 +271,26 @@
             function showExtra9() {
                 
                // Add Code Here
-               
+               let numbers = window.prompt("Please enter a set of integer numbers, each number separated by a space!");
+            
+               let numbersArr = numbers.trim().split(" ").map(Number);
+               if (numbersArr.some(isNaN)) {
+                     let error = window.alert("You entered an invalid integer!");
+                     return;
+               }
+            
+                let min = Math.min(...numbersArr);
+                let max = Math.max(...numbersArr);
+                let sorted = numbersArr.sort((a, b) => a - b);
+                let median;
+                if (sorted.length % 2 === 0) {
+                      median = (sorted[sorted.length / 2 - 1] + sorted[sorted.length / 2]) / 2;
+                } else {
+                      median = sorted[Math.floor(sorted.length / 2)];
+                }
+
+                document.getElementById("demo").innerHTML = (`Numbers: ${numbersArr.join(",")}<br>Minimum: ${min}<br>Maximum: ${max}<br>Median: ${median}`);
+
             }
 
             /* 10. Write a function that merges two arrays of objects, representing persons. 
@@ -272,7 +309,11 @@
                 var persons2 = [{name:"Mary",age:23}, {name:"Jennifer",age:32}];
                 
                // Add Code Here
-               
+                let personsNew = persons1.concat(persons2);
+                personsNew.sort((a, b) => a.age - b.age);
+                for (x in personsNew) {
+                    document.getElementById("demo").innerHTML += "Name: " + personsNew[x].name + ", Age: " + personsNew[x].age + "<br>";
+                }
                
             }
 
@@ -286,7 +327,25 @@
             function showExtra11() {
                 
                // Add Code Here
-               
+               let items = []
+               while (true) {
+                    let name = window.prompt("Provide the name of the item! (Type 'done' to finish)");
+                    if (name.toLowerCase() === "done") {
+                        break;
+                    }
+                    let price = parseFloat(window.prompt("Provide the price of the item!"));
+                    if (isNaN(price)) {
+                        window.alert("You did not enter a valid price!");
+                        continue;
+                    }
+                    items.push({name: name, price: price});
+                }
+
+                let total = 0;
+                for (let item of items) {
+                    total += item.price;
+                }
+                document.getElementById("demo").innerHTML = "Total amount to be paid: $" + total.toFixed(2);
             }
 
         </script>
