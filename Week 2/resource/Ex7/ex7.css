@@ -1,0 +1,65 @@
+  * { box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; margin: 0; color: #1f2937; }
+
+  /* =========================================================================
+     PART 1 — GRID (2-column layout with sidebar)
+     TODO: Turn .page into a CSS Grid with 3 areas:
+       "nav  nav"
+       "side main"
+     - nav row height: 80px, main row height: remaining height
+     - two columns: side takes 1/3 of page width, main takes 2/3 of page width
+     ========================================================================= */
+  .page {
+
+    min-height: 100vh;
+  }
+
+  nav {  
+
+    background: #18212f; 
+  }
+
+  aside {  
+
+    background: #f3f4f6; 
+    padding: 16px; 
+  }
+
+  main {  
+
+    padding: 16px; 
+  }
+
+  /* ===========================================================
+     PART 2 — FLEXBOX (nav bar)
+     TODO: Make nav a flex container so the logo sits on the left
+     and the links sit on the right, all vertically centered.
+     =========================================================== */
+  nav {
+
+    padding: 12px 20px;
+    color: white;
+  }
+
+  nav .logo { font-weight: bold; }
+  nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 16px; }
+  nav a { color: white; text-decoration: none; }
+
+  /* =============================================================
+     PART 3 — FLEXBOX (card row)
+     TODO: Make .card-row a flex container with 3 cards in 1 row,  
+     equal all round spacing between the cards.
+     ============================================================= */
+  .card-row {
+
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .card {
+    width: 300px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    min-width: 140px;
+  }
