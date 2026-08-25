@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2 - CSS</title>
+    <!-- 
+      #####
+        selectors: element, id, class, universal
+        combinators: 
+            child: >
+            descendant: space
+            next sibling: + 
+            selector list: ,
+        pseudo-classes: :hover, :last-child, :nth-child(even)
+        pseudo-elements: ::first-letter, ::first-line, ::before, ::after
+        Check out:
+            https://www.w3schools.com/cssref/css_selectors.php
+            https://www.w3schools.com/cssref/css_ref_combinators.php
+            https://www.w3schools.com/cssref/css_ref_pseudo_classes.php
+
+        properties: color, background-color, border, padding, margin, font-*, text-align, text-decoration, display, width, max-width, margin-auto 
+
+      #####
+        positioning: static, relative, absolute, fixed, sticky
+        z-index: -1, 1, 2, 3
+        Flexbox: display: flex, justify-content, align-items, flex-direction, flex-wrap, gap
+        Grid: display: grid, grid-template-columns, grid-template-rows, grid-gap, grid-column, grid-row
+        Check out:
+            https://www.w3schools.com/css/css_positioning.asp
+            https://www.w3schools.com/css/css3_flexbox.asp
+            https://www.w3schools.com/css/css_grid.asp
+    -->
+     <!-- INTERNAL styling -->
+    <style>
+     /* use a selector to select an element to style
+       4 basic selector (ranked higher has more pirority):
+          - inline
+          - id 
+          - class
+          -tag
+      */
+
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p{
+        color: green;
+        text-align: center;
+        display: inline; /* property used to style the element wheather you want to see it inline or as a block */
+      }
+      .p2{
+        color: #00ffff;
+      }
+      #p1{
+        color: purple;
+      }
+      .p1{
+        color: black;
+      }
+      .highlight{
+        text-decoration: underline;
+        font-size: 1.5em;
+        font-style: italic;
+      }
+      .div1{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        display: inline-block;
+        margin: 0px 20px 0px 0px;
+        border-width: 4px;
+        border-style: dashed;
+        border-color: black;
+        border-right-color: aqua;
+        padding: 10px;
+      }
+      .div2{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        display: inline-block;
+      }
+
+    </style>
+
+    <!-- EXTERNAL styling -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- INLINE styling  -->
+    <h1 style="color: blue; background-color: yellow">This is CSS</h1>
+    <p id="p1" class="p1" style="color: blue;">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quam
+      voluptatibus maiores voluptates iure repellendus cupiditate iusto
+      praesentium impedit iste esse quas nobis assumenda harum laborum
+      excepturi, dolorem, aspernatur molestiae?
+    </p>
+
+    <p class="p2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et amet est eum
+      eligendi dolores laborum.
+    </p>
+
+    <!-- warp this worldwith another tag so that i can style using this tag -->
+    <p>Lorem ipsum <span class="highlight">dolor</span> sit amet.</p>
+
+    <!-- two type of element:
+      - block type, eg., div, p, h1-h6, nav, aside, main, section, header, footer
+
+      - inline type, eg., span, a, strong, input, img, button, em, select, br, hr
+    -->
+    <hr></hr>
+    <div class="div1">
+        div1
+    </div>
+    <div class="div2">
+      div2
+    </div>
+
+  </body>
+</html>

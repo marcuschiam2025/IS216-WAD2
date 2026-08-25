@@ -1,0 +1,43 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-style: italic;
+}
+.fr{
+    width: 40%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+tr{
+    width: 10%;
+    border:1px solid black;
+    margin: 0.1px;
+}
+td{
+    width: 10%;
+    border:1px solid black;
+    padding: 5px;
+    margin: 0.1px;
+}
+th{
+    border:1px solid black
+}
+.greenbox{
+    background-color: #bfffbb;
+}
+.redbox{
+    background-color: #FFC8C8;
+}
+.cellbold{
+    font-weight: bold;
+}
