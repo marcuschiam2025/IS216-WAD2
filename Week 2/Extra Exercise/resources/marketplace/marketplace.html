@@ -1,124 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
     <head>
         <style>
-            
-       
+            body {
+                margin: 20px;
+            }
+
+            .red {
+                color: red;
+            }
+
+            .green {
+                color: green;
+            }
+
+            .maroon {
+                color: maroon;
+            }
+
+            p {
+                color: blue;
+            }
+
+            .flex_container {
+                display: flex;
+                gap: 40px;
+                padding: 30px;
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid black;
+            }
+
+            th {
+                text-align: center;
+                font-weight: bold;
+                background-color: palevioletred;
+            }
+
+            td {
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .blue_background {
+                background-color: skyblue;
+            }
+
+            input[type="checkbox"]:checked {
+                background-color: #2b6bf3;
+                border-color: #2b6bf3;
+                width: 48px;
+                height: 48px;
+            }
         </style>
     </head>
 
     <body>
+        <form>
+            <img style="height: 100; width: 300" src="images/marketplace.jpg" />
+            <h1>Welcome to my Marketplace</h1>
 
-    <form>
-        <img style="height:100;width:300" src="images/marketplace.jpg">
-        <h1> Welcome to my Marketplace </h1>
+            <h2 class="red">Fruit Section</h2>
+            <p>The list of fruit available are as below :</p>
+            <div class="flex_container">
+                <div>
+                    <img
+                        class="internal_image"
+                        style="height: 200px; width: 200px"
+                        src="images/fruit.jpeg"
+                    />
+                </div>
 
-        <h2> Fruit Section </h2>
-        <p> The list of fruit available are as below :</p>
-	    <div >
-            <div >
-                <img style="height:200px;width:200px" src="images/fruit.jpeg">
+                <div>
+                    <table style:border="1" class="table1">
+                        <tr>
+                            <th>Name</th>
+                            <th>Qty</th>
+                            <th>Select</th>
+                        </tr>
+                        <tr>
+                            <td>Banana</td>
+                            <td>6</td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    name="fruit[]"
+                                    value="banana"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="blue_background">
+                            <td>Peach</td>
+                            <td>12</td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    name="fruit[]"
+                                    value="peach"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Orange</td>
+                            <td>5</td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    name="fruit[]"
+                                    value="orange"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="blue_background">
+                            <td>Apple</td>
+                            <td>2</td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    name="fruit[]"
+                                    value="apple"
+                                />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            
-            <div >
-                <table style:border=1>
-                    <tr> 
-                        <th> Name </th>
-                        <th> Qty </th>
-                        <th> Select </th>
-                    </tr>
-                    <tr> 
-                        <td> Banana</td>
-                        <td> 6 </td>
-                        <td> <input type="checkbox" name=fruit[] value="banana"> </td>
-                    </tr>
-                    <tr> 
-                        <td> Peach</td>
-                        <td> 12 </td>
-                        <td> <input type="checkbox" name=fruit[] value="peach"> </td>
-                    </tr>
-                    <tr> 
-                        <td> Orange </td>
-                        <td> 5</td>
-                        <td> <input type="checkbox" name=fruit[] value="orange"> </td>
-                    </tr>
-                    <tr> 
-                        <td> Apple </td>
-                        <td> 2</td>
-                        <td> <input type="checkbox" name=fruit[] value="apple"> </td>
-                    </tr>
 
-                </table>
+            <h2 class="green">Vegetable Section</h2>
+
+            <p>The list of vegetable available are as below :</p>
+
+            <div class="flex_container">
+                <div>
+                    <table style:border="1">
+                        <tr>
+                            <th>Name</th>
+                            <th>Qty</th>
+                            <th>Select</th>
+                        </tr>
+                        <tr>
+                            <td>Cabbage</td>
+                            <td>8</td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    name="veg[]"
+                                    value="cabbage"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="blue_background">
+                            <td>Lettuce</td>
+                            <td>7</td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    name="veg[]"
+                                    value="lettuce"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Spinach</td>
+                            <td>3</td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    name="veg[]"
+                                    gvalue="spinach"
+                                />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <img
+                        style="height: 200px; width: 200px"
+                        src="images/veg.jpg"
+                    />
+                </div>
             </div>
-        </div>
 
-        <h2> Vegetable Section</h2>
-
-        <p> The list of vegetable available are as below :</p>
-        
-        <div>
-            <div>
-                <table style:border=1>
-                    <tr> 
-                        <th> Name </th>
-                        <th> Qty </th>
-                        <th> Select </th>
-                    </tr>
-                    <tr> 
-                        <td> Cabbage </td>
-                        <td> 8 </td>
-                        <td> <input type="checkbox" name=veg[] value="cabbage"> </td>
-                    </tr>
-                    <tr> 
-                        <td> Lettuce </td>
-                        <td> 7 </td>
-                        <td> <input type="checkbox" name=veg[] value="lettuce"> </td>
-                    </tr>
-                    <tr> 
-                        <td> Spinach</td>
-                        <td> 3 </td>
-                        <td> <input type="checkbox" name=veg[] gvalue="spinach"> </td>
-                    </tr>
-                </table>
+            <h2 class="maroon">Drinks Section</h2>
+            <p>The list of drinks available are as below :</p>
+            <div class="flex_container">
+                <div>
+                    <img
+                        style="height: 100px; width: 100px"
+                        src="images/coffee.jpg"
+                    />
+                </div>
+                <div>
+                    <table style:border="1">
+                        <tr>
+                            <th>Name</th>
+                            <th>Qty</th>
+                            <th>Select</th>
+                        </tr>
+                        <tr>
+                            <td>Coffee</td>
+                            <td>3</td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    name="drink[]"
+                                    value="coffee"
+                                />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <img
+                        style="height: 100px; width: 100px"
+                        src="images/coffee.jpg"
+                    />
+                </div>
             </div>
-            <div>
-                <img style="height:200px;width:200px" src="images/veg.jpg">
-            </div>
-            
-        </div>
-    
-        <h2> Drinks Section</h2>
-        <p> The list of drinks available are as below :</p>
-        <div>
 
-            <div>
-                <img style="height:100px;width:100px" src="images/coffee.jpg">
-            </div>
-            <div>
-                <table style:border=1>
-                    <tr> 
-                        <th> Name </th>
-                        <th> Qty </th>
-                        <th> Select </th>
-                    </tr>
-                    <tr> 
-                        <td> Coffee </td>
-                        <td> 3 </td>
-                        <td> <input type="checkbox" name=drink[] value="coffee"> </td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <img style="height:100px;width:100px" src="images/coffee.jpg">
-            </div>
-        </div>
-
-
-        <input type="submit" name="submit">
-
-    </form>
-
+            <input type="submit" name="submit" />
+        </form>
     </body>
-
 </html>

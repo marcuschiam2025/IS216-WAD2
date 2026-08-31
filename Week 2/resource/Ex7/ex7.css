@@ -12,6 +12,21 @@
   .page {
 
     min-height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "nav nav"
+      "side main";
+      nav {
+        grid-area: nav;
+      }
+      aside {
+        grid-area: side;
+      }
+      main {
+        grid-area: main;
+      }
   }
 
   nav {  
@@ -39,7 +54,11 @@
 
     padding: 12px 20px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
 
   nav .logo { font-weight: bold; }
   nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 16px; }
@@ -54,6 +73,10 @@
 
     gap: 12px;
     margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
   }
   .card {
     width: 300px;
