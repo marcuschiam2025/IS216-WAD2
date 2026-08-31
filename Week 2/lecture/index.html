@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <!-- 
+        Inline / internal / external CSS (and why external is best)
+        Selectors + cascading + specificity
+        Text styling + colors + units
+        Display modes (block/inline/none)
+        Box model + box-sizing
+        Flexbox (navbar, toolbars, card row)
+        CSS Grid (overall page layout + gallery)
+        Hover effects + link styling
+        Basic form styling
+        Simple positioning + sticky header
+    -->
+      
+    <!-- 
+      Improvements:
+        - make the side bar look better, e.g., use form styling
+        - add one more row to the grid and include three new pictures
+        - add addional effects such as :link, :active, on navigation links
+        - make the sidebar “sticky” below header.
+    -->
+    <link rel="stylesheet" href="./css/style.css"/>
+  </head>
+  <body>
+      <div>
+        <img id="logo" src="./img/logo.png" alt="logo"> <h1 class="inline">Explore the world, one city at a time</h1> 
+
+        <!-- outer contrainer with 2x2 grid -->
+         <div class="page">
+            <nav>
+                <a href="">Place</a>
+                <a href="">About</a>
+                <a href="">More</a>
+            </nav>
+
+            <aside>
+              <h2>Filter</h2>
+              
+            </aside>
+
+            <main class="album">
+              <img src="./img/brunei.avif" alt="">
+              <img src="./img/easttimor.avif" alt="">
+              <img src="./img/indonesia.avif" alt="">
+              <img src="./img/laos.avif" alt="">
+              <img src="./img/malaysia.avif" alt="">
+              <img src="./img/myanmar.avif" alt="">
+              <img src="./img/philippines.avif" alt="">
+              <img src="./img/thailand.avif" alt="">
+              <img src="./img/vietnam.avif" alt="">
+            </main>
+         </div>
+    
+  </body>
+</html>
