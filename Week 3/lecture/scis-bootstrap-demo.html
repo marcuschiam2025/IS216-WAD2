@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>School of Computing (Bootstrap Demo)</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons (used for the social links + feature icons below) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      /* custom CSS layered on top of Bootstrap - Bootstrap gives you the *structure/utilities*,
+       but you can still add your own CSS for anything it doesn't cover. */
+       /* * {
+        padding: 0 !important;
+      } */
+      .hero { background-color: #634900; }
+      .scis-bg-color { background-color: #d4a10e; }
+      .scis-bg-color2 { background-color: #122b72; }
+      .scis-color { color: #d4a10e;  }
+
+      .logo { width: 200px; }
+
+      .carousel-item img {
+        height: 500px; /* Adjust this to your desired height */
+        object-fit: cover; /* Crops the image to fit without stretching */
+        object-position: center; /* Centers the image content */
+      }
+
+  
+    </style>
+  </head>
+
+  <body>
+    <!-- ============================================================
+    1. NAVBAR
+    navbar              -> base component class for creating navbar
+    navbar-expand-lg    -> collapses into a hamburger menu below "lg" breakpoint
+    navbar-brand        -> for logo
+    scis-bg-color       -> custom CSS for navbar background
+    sticky-top          -> keeps the navbar visible while scrolling
+    p-0                 -> remove default Bootstrap's padding
+    Task1               -> Pin the nav items, except the logo, to the right!
+    Task2               -> make the navbar sticky to the top as the user scroll down
+============================================================= -->
+    <!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
+
+
+    <!-- ============================================================
+       2. HERO / BANNER SECTION
+       text-white -> text colour utility
+       lead       -> slightly bigger/lighter paragraph style for intro text
+       align-items-center   -> align the items veritically center
+       (try out align-self-center)
+
+       Question -> why justify-content-center doesn't work
+       Question -> Explain col-lg-6
+  ============================================================= -->
+
+    <header class="hero text-white">
+      <!-- https://getbootstrap.com/docs/5.3/components/carousel/ -->
+    </header>
+
+    <!-- ============================================================
+       3. HIGHLIGHTS SECTION
+       row-cols-1 -> 1 column in each row
+       fw-hold -> bolded font
+       py-4 -> padding on top/bottom (y-axis) with the size of 4
+  ============================================================= -->
+    <section>
+      <!-- https://getbootstrap.com/docs/5.3/components/navs-tabs/ -->
+     
+    </section>
+
+    <!-- ============================================================
+       4. PROGRAMME / NEWS CARDS [DIY]
+       This mirrors the real site's card-grid layout: a responsive row of
+       Bootstrap "card" components.
+       col-xl-3 col-lg-4 col-md-6 col-sm-12 -> 4 cards per row on xl screens,
+       3 per row on lg, 2 per row on md, 1 per row on small screens
+       h-100          -> stretches every card to the same height in its row
+       card-img-top   -> image pinned to the top of the card, full width
+       card-body      -> padded content area of the card
+  ============================================================= -->
+  <section>
+    <!-- DIY -->
+  </section>
+
+    <!-- ============================================================
+       5. NEWS SECTION (2nd card grid, showing an alternate column split) [DIY]
+  ============================================================= -->
+   <section>
+    <!-- DIY -->
+   </section>
+
+    <!-- ============================================================
+       6. FOOTER
+       bg-dark text-white -> dark footer theme
+       list-unstyled       -> removes default <ul> bullets/padding
+       border-top border-secondary -> thin divider line above the copyright bar
+  ============================================================= -->
+    <footer id="contact" class="bg-dark text-white pt-5 pb-3">
+      <!-- DIY -->
+    </footer>
+
+    <!-- Bootstrap JS bundle (includes Popper) - needed for the navbar toggler,
+       and would also be needed for tooltips/popovers/dropdowns/modals -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
