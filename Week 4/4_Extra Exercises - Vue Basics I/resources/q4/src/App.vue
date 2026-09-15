@@ -1,28 +1,27 @@
 <!-- Vue Composition API -->
 <script setup>
-// ADD YOUR CODE HERE
+import { ref } from 'vue';
 
+// Path to the image file
+const img = ref("/img/kitten.png");
 
-
-
-
-
-
-// END OF ADDING YOUR CODE HERE
+// Initial background color of the box
+const color = ref("Black");
 </script>
 
 <template>
-  <!-- MODIFY YOUR CODE HERE -->
-  Select background color: 
+  <!-- Color picker input bound to "color" -->
+  Select background color: <input type="color" v-model="color">
 
-  <div class="box">
-    <img :src="img">
+  <!-- Box container with dynamic background color based on selected color -->
+  <div class="box m-2 p-4" :style="{ 'background-color': color }">
+    <!-- Image displayed inside the box, using the path from "img" -->
+    <img class="img-fluid" :src="img">
   </div>
-  
-  <!-- END OF MODIFYING YOUR CODE HERE -->
 </template>
 
 <style scoped>
+/* Styling for the box: fixed width */
 .box {
   width: 310px;
 }

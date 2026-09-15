@@ -1,9 +1,10 @@
 <!-- Vue Composition API -->
 <script setup>
 import { ref } from 'vue';
+
+// Import Vue's computed() function to create reactive computed values
 import { computed } from 'vue';
 
-// DO NOT MODIFY
 const is_curriculum = ref({
   "University Core": ["Statistics", "Computational Thinking", "Managing",
     "Writing & Reasoning", "Internship",
@@ -36,33 +37,33 @@ const is_curriculum = ref({
     "Retail Banking & Mobile Technology"]
 });
 
+// Initial selected category
 const selected_cat = ref("University Core");
-// END OF DO NOT MODIFY
-  
-// ADD YOUR CODE HERE
 
+// Returns an array of all course category names
+const categories = computed(() => Object.keys(is_curriculum.value));
 
+// Returns an array of courses based on the selected category
+const courses = computed(() => is_curriculum.value[selected_cat.value]);
 
-
-
-
-
-// END OF ADDING YOUR CODE HERE
 </script>
 
 <template>
   <h3 class="mb-4">BSC (IS) Curriculum</h3>
-  <!-- ADD YOUR CODE HERE -->
 
+  <!-- Dropdown list to select course category -->
+  Select Category
+  <select v-model="selected_cat">
+    <!-- Render each category as an option -->
+    <option v-for="cat in categories" :key="cat">{{ cat }}</option>
+  </select>
 
-
-
-
-
-
-  <!-- END OF ADDING YOUR CODE HERE -->
+  <!-- Display the list of courses for the selected category -->
+  <ul class="mt-2">
+    <li v-for="course in courses" :key="course">{{ course }}</li>
+  </ul>
 </template>
 
 <style scoped>
-/* Optional styling can go here */
+/* Scoped styling can be added here */
 </style>

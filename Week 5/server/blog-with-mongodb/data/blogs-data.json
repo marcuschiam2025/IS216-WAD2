@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "subject": "Hello World",
+    "entry": "The quick brown fox jumps over the lazy dog",
+    "mood": "Happy"
+  },
+  {
+    "id": 2,
+    "subject": "Goodbye World",
+    "entry": "Time to rest",
+    "mood": "Sad"
+  },
+  {
+    "id": 3,
+    "subject": "Term Starts Again",
+    "entry": "Another term started omg i wanna die alrdy...",
+    "mood": "Sad"
+  },
+  {
+    "id": 4,
+    "subject": "I Suck",
+    "entry": "I got F on my quiz I am terrible",
+    "mood": "Sad"
+  },
+  {
+    "id": 5,
+    "subject": "My Puppy",
+    "entry": "Mummy says she will give away my dog because he pees everywhere",
+    "mood": "Angry"
+  },
+  {
+    "id": 6,
+    "subject": "CNY Homework",
+    "entry": "This crazy woman gave us CNY homework omg can she pliz go enjoy CNY and leave us alone?",
+    "mood": "Angry"
+  },
+  {
+    "id": 7,
+    "subject": "My First Love",
+    "entry": "A very handsome boy gave me roses for Vday and asked me out!",
+    "mood": "Happy"
+  }
+]

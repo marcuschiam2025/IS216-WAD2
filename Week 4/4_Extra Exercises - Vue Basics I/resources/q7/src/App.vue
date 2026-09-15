@@ -13,32 +13,34 @@ const exchange_rates = ref({
 const sing_dollar = ref(1);
 const selected_currency = ref("United States Dollar");
 
-// ADD YOUR CODE HERE
+// Return an array of available currency names from the exchange_rates object
+const currencies = computed(() =>
+  Object.keys(exchange_rates.value)
+);
 
-
-
-
-
-
-
-// END OF ADDING YOUR CODE HERE
+// Calculates the converted amount based on selected currency and SGD input (Part B) 
+const converted_amt = computed(() => {
+  const rate = exchange_rates.value[selected_currency.value];
+  return rate * sing_dollar.value;
+});
 </script>
 
 <template>
   <h3>Convert SGD to Other Currency</h3>
-
-  <!-- ADD OR MODIFY YOUR CODE HERE -->
-
   <div class="p-2">
-    Singapore Dollar: <input type="number" min="0">
+    <!-- Input for amount in Singapore Dollars -->
+    Singapore Dollar: <input type="number" v-model="sing_dollar" min="0">
   </div>
+
   <div class="p-2">
-    <select>
-      <option></option>
+    <!-- Dropdown to select target currency -->
+    <select v-model="selected_currency">
+      <option v-for="currency in currencies" :key="currency">{{ currency }}</option>
     </select>
-  </div>
 
-  <!-- END OF ADDING OR MODIFYING YOUR CODE HERE -->
+    <!-- Display converted amount formatted to 6 decimal places -->
+    {{ converted_amt.toFixed(6) }}
+  </div>
 </template>
 
 <style scoped>

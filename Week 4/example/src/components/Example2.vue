@@ -12,9 +12,17 @@
 		return "This is my number " + phone.value
     }
 
+    let user = {
+        'name' : 'Jack',
+        'age' : 18
+    };
+
 </script>
 
 <template>
+
+    <img v-bind:src="'/assets/' + myImg + '.png'"/>
+
     <h1> Name : {{ name }} </h1> 
     <h1> Phone : {{ getPhone() }}  </h1>   
     <!-- {{ 'Mr ' + name }} <br>
@@ -26,4 +34,6 @@
 .greeting {
     color: blue;
 }
+
+
 </style>
