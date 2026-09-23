@@ -2,6 +2,7 @@
 import { ref, onMounted } from "vue";
 import ItemsBrowser from "../components/ItemsBrowser.vue";
 import axios from "axios";
+import { stringify } from "node:querystring";
 
 
 // Reactive data
@@ -14,11 +15,48 @@ const cartItems = ref([]);
 const STORAGE_KEY = "cart"
 
 // TODO: Fetch categories when the component is created
+onMounted( async() => {
+    let url = "http://127.0.0.1:3000/categories"
 
+    try {
+        let response = await axios.get(url, {
+            params: {
+
+            }
+        })
+
+        console.log(response.data)
+
+        categories.value = response.data
+
+        getItems()
+
+    } catch(e) {
+        console.log(e.message)
+    }
+ } )
 
 // TODO: Fetch items for the currently selected category
 async function getItems() {
     // Add code
+    let url = "http://127.0.0.1:3000/items"
+
+    try {
+        let response =  await axios.get(url, {
+            params: {
+                category : selected_category.value
+            }
+        })
+        items.value = response.data
+
+        for (const item of items.value) {
+            item.quantity = 0
+        }
+
+        console.log(items.value)
+    } catch(e) {
+        console.log(e.message)
+    }
 }
 
 // Add selected items to cart
@@ -38,7 +76,7 @@ function doAddToCart(itemsToAdd) {
 
     // TODO: store current cartitems into local storage
     // cartItems.value is a JS (complex) obj. We need to use JSON.stringify to convert the JS obj to JSON string
-   
+   localStorage.setItem(STORAGE_KEY, JSON,stringify(cartItems,value))
     
 }
 
@@ -49,8 +87,8 @@ function doAddToCart(itemsToAdd) {
   
     <!-- TODO: Category selection dropdown -->
     <label for="categories">Categories</label>
-    <select class="form-control" id="categories" >
-        <option> category </option>
+    <select class="form-control" id="categories" v-model="selected_category" @change="getItems()">
+        <option v-for="category in categories"> {{ category }} </option>
     </select>
     <br>
 
@@ -59,9 +97,9 @@ function doAddToCart(itemsToAdd) {
         <div class="row p-3">
             <div class='col-md-6 text-center'>
                 <!-- TODO: Show Items using ItemsBrowser-->
-                <button>
-                    Add to Cart
-                </button>
+
+                <ItemsBrowser v-on:addcart="doAddToCart" v-bind:items="items">Add to Cart</ItemsBrowser>
+
             </div>
         </div>
 
