@@ -1,0 +1,71 @@
+/* 
+TRIAL LAB TEST C
+Name: 
+Email:
+*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+.calendar-container {
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px lightgray;
+}
+
+.calendar-title {
+    text-align: center;
+    margin-bottom: 20px;
+    display: black;
+    font-size: 150%;
+}
+
+/* 7-column x 6-row CSS Grid */
+.calendar-grid {
+    gap: 8px;
+    display: grid;
+    width: 90vw;  // takes up 90% of viewport's width. Unlike "width: 90%" (which calculates 90% based on the immediate parent element, like a <div> or <main>), vw ignores parent containers completely and looks directly at the browser window itself.
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* Base styles for custom <day> elements */
+day {
+    height: 50px;
+    font-size: 95%;
+    color: dimgray;
+    background-color: snow;
+    border: 1px solid lightgray;
+}
+
+/* Row 1: Header styling */
+day.header {
+    height: auto;
+    padding: 10px 0;
+    background-color: indigo;
+    color: white;
+    border: none;
+    font-size: 75%;
+}
+
+/* Padding days outside of October */
+day.inactive {
+    color: lightgray;
+    background-color: ghostwhite;
+    border-color: whitesmoke;
+}
+
+/* (b) (c) TODO here: add in a new selectors if necessary */

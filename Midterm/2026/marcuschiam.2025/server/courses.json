@@ -1,0 +1,31 @@
+{
+    "courseInfo": [
+        {
+            "code": "cs102",
+            "name": "Programming II",
+            "description": "Vibe Coding using Java",
+            "coreForIS": false,
+            "coreForSE": true,
+            "coreForCS": true,
+            "coreForCL": false
+        },
+        {
+            "code": "asd",
+            "name": "sad",
+            "description": "asdas",
+            "coreForIS": false,
+            "coreForSE": true,
+            "coreForCS": false,
+            "coreForCL": false
+        },
+        {
+            "code": "dgs",
+            "name": "gs",
+            "description": "sgd",
+            "coreForIS": false,
+            "coreForSE": true,
+            "coreForCS": false,
+            "coreForCL": false
+        }
+    ]
+}

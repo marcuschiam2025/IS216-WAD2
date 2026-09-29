@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, #app {
+    margin: 0;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+.q4-container {
+    padding: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.error-msg {
+    color: red;
+    font-weight: bold;
+}
+
+/* Add Course Card Formatting */
+.add-course-card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 24px;
+    background-color: #f9f9f9;
+}
+
+.add-course-card h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.form-group input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 16px;
+    margin: 8px 0;
+}
+
+.checkbox-group label {
+    cursor: pointer;
+}
+
+.add-btn {
+    padding: 8px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn {
+    padding: 4px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Table Formatting */
+.bordered-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.bordered-table th,
+.bordered-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+.text-yes {
+    color: blue;
+    font-weight: bold;
+}
+
+.text-no {
+    color: red;
+    font-weight: bold;
+}

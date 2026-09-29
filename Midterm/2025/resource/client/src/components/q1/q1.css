@@ -1,0 +1,63 @@
+/*
+  Name: Marcus Chiam Hao Yi
+  Email: marcuschiam.2025@computing.smu.edu.sg
+*/
+
+/* Part A */
+.header {
+  background-color: #004d40;
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  padding: 20px;
+  color: white;
+
+}
+
+.header img {
+  width: 100px;
+}
+
+/* Part B */
+.filter-form,
+.job-listings {
+  vertical-align: top;
+  border-radius: 8px;
+
+}
+
+.filter-form {
+  margin-right: 20px;
+}
+
+.job-listings {
+  margin-left: 20px;
+}
+
+/* Part C */
+.filter-form form label {
+  display: inline-block;
+  width: 30%;
+  
+}
+
+.filter-form input[type="text"],
+.filter-form select {
+  width: 60%;
+}
+
+/* Part D: Add an adequate selector here */
+tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* Part E */
+.badge {
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+
