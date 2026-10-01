@@ -1,0 +1,76 @@
+{
+    "courseInfo": [
+        {
+            "code": "se201",
+            "name": "AI Driven Software Engineering",
+            "description": "How to be artificially intelligent",
+            "coreForIS": true,
+            "coreForSE": true,
+            "coreForCS": false,
+            "coreForCL": false
+        },
+        {
+            "code": "se301",
+            "name": "Advanced Programming and Design",
+            "description": "Advanced vibe coding",
+            "coreForIS": false,
+            "coreForSE": true,
+            "coreForCS": false,
+            "coreForCL": false
+        },
+        {
+            "code": "is112",
+            "name": "Data Management",
+            "description": "SQL and diagrams",
+            "coreForIS": true,
+            "coreForSE": true,
+            "coreForCS": true,
+            "coreForCL": true
+        },
+        {
+            "code": "law101",
+            "name": "Contract Law I",
+            "description": "Offer, acceptance, consideration and legality",
+            "coreForIS": false,
+            "coreForSE": false,
+            "coreForCS": false,
+            "coreForCL": true
+        },
+        {
+            "code": "is115",
+            "name": "Algorithms and Programming",
+            "description": "Is P = NP?",
+            "coreForIS": true,
+            "coreForSE": true,
+            "coreForCS": false,
+            "coreForCL": true
+        },
+        {
+            "code": "se401",
+            "name": "Apprenticeship",
+            "description": "Out of the classroom",
+            "coreForIS": false,
+            "coreForSE": true,
+            "coreForCS": false,
+            "coreForCL": false
+        },
+        {
+            "code": "cs102",
+            "name": "Programming II",
+            "description": "Vibe Coding using Java",
+            "coreForIS": false,
+            "coreForSE": true,
+            "coreForCS": true,
+            "coreForCL": false
+        },
+        {
+            "code": "asdf",
+            "name": "asdf",
+            "description": "asdf",
+            "coreForIS": false,
+            "coreForSE": true,
+            "coreForCS": true,
+            "coreForCL": false
+        }
+    ]
+}

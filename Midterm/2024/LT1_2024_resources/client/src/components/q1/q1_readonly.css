@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.navbar .brand {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.cta-btn {
+    padding: 10px 24px;
+    background-color: #1a3c5e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.sidebar, .quicklinks {
+    background: #f5f8fb;
+    border: 1px solid #d6e4f0;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.sidebar h3, .quicklinks h3 {
+    color: #1a3c5e;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.sidebar ul, .quicklinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li, .quicklinks li {
+    padding: 4px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.quicklinks li a { color: #1a3c5e; text-decoration: none; }
+.quicklinks li a:hover { text-decoration: underline; }
+
+.content h2 { color: #1a3c5e; margin-bottom: 6px; }
+.content > p { color: #666; margin-bottom: 16px; font-size: 0.95em; }
+
+.card {
+    background: white;
+    border: 1px solid #d6e4f0;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.card.featured { background-color: #eaf3fb; }
+
+.card h3 { color: #1a3c5e; margin-bottom: 8px; font-size: 1em; }
+.card p  { font-size: 0.85em; color: #555; margin: 4px 0; }
+
+.footer-brand { font-size: 0.9em; text-align: center; }
+
+.footer-links li a {
+    color: #a8c8e8;
+    text-decoration: none;
+    font-size: 0.85em;
+}
+
+.footer-links li a:hover { color: white; }

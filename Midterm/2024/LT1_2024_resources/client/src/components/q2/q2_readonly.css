@@ -1,0 +1,29 @@
+#title {
+    background-color: lightblue;
+}
+
+.site-name {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.menu-item {
+    text-align: center;
+    margin: 10px 0;
+    background-color: aquamarine;
+    border: 1px solid brown;
+}
+
+.content-paragraph {
+    margin-top: 20px;
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-title {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
