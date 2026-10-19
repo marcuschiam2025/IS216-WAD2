@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+   <h1>Login</h1>
+   <input id="username" placeholder="Username">
+   <input id="password" type="password">
+   <button id="login">Login</button>
+   <p id="message"></p>
+   <script>
+      document.getElementById("login").onclick = () => {
+         const user = document.getElementById("username").value;
+         const pass = document.getElementById("password").value;
+         if (user === "admin" && pass === "1234")
+            document.getElementById("message").innerText = "Welcome Admin!";
+         else
+            document.getElementById("message").innerText = "Login Failed";
+      };
+   </script>
+</body>
+
+</html>
