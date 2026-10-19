@@ -1,0 +1,118 @@
+{
+    "rooms": [
+        "Lovelace",
+        "Turing",
+        "Hopper",
+        "Ritchie"
+    ],
+    "equipment": [
+        {
+            "id": 1,
+            "name": "Projector",
+            "room": "Lovelace",
+            "status": "Damaged"
+        },
+        {
+            "id": 2,
+            "name": "HDMI Adapter",
+            "room": "Lovelace",
+            "status": "Damaged"
+        },
+        {
+            "id": 3,
+            "name": "Flipchart",
+            "room": "Lovelace",
+            "status": "Done"
+        },
+        {
+            "id": 4,
+            "name": "Projector",
+            "room": "Turing",
+            "status": "Done"
+        },
+        {
+            "id": 5,
+            "name": "Clicker",
+            "room": "Turing",
+            "status": "Pending"
+        },
+        {
+            "id": 6,
+            "name": "HDMI Adapter",
+            "room": "Turing",
+            "status": "Damaged"
+        },
+        {
+            "id": 7,
+            "name": "Flipchart",
+            "room": "Turing",
+            "status": "Pending"
+        },
+        {
+            "id": 8,
+            "name": "Projector",
+            "room": "Hopper",
+            "status": "Pending"
+        },
+        {
+            "id": 9,
+            "name": "Whiteboard",
+            "room": "Hopper",
+            "status": "Pending"
+        },
+        {
+            "id": 10,
+            "name": "Webcam",
+            "room": "Hopper",
+            "status": "Done"
+        },
+        {
+            "id": 11,
+            "name": "Microphone",
+            "room": "Ritchie",
+            "status": "Pending"
+        },
+        {
+            "id": 12,
+            "name": "Display Screen",
+            "room": "Ritchie",
+            "status": "Damaged"
+        },
+        {
+            "id": 15,
+            "name": "asdf",
+            "room": "Hopper",
+            "status": "Pending"
+        },
+        {
+            "id": 17,
+            "name": "asdf",
+            "room": "Turing",
+            "status": "Pending"
+        },
+        {
+            "id": 18,
+            "name": "asdf",
+            "room": "Lovelace",
+            "status": "Done"
+        },
+        {
+            "id": 19,
+            "name": "asdf",
+            "room": "Lovelace",
+            "status": "Done"
+        },
+        {
+            "id": 20,
+            "name": "asdf",
+            "room": "Lovelace",
+            "status": "Damaged"
+        },
+        {
+            "id": 30,
+            "name": "asdfa",
+            "room": "Turing",
+            "status": "Pending"
+        }
+    ]
+}

@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, #app {
+    margin: 0;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+.q4-page {
+    min-height: 100vh;
+    background: white;
+}
+
+.topbar {
+    height: 60px;
+    background: #213f62;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.view-title {
+    font-size: 20px;
+}
+
+.manager-layout {
+    display: grid;
+    grid-template-columns: 185px minmax(700px, 830px);
+    gap: 52px;
+    padding: 32px 24px;
+    align-items: start;
+}
+
+.room-heading,
+.equipment-heading {
+    margin: 0 0 14px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.room-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.room-btn {
+    width: 130px;
+    min-height: 74px;
+    border: 2px solid #102f45;
+    background: #ededed;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.room-btn.selected {
+    background: #fde5d8;
+}
+
+.add-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.add-row label {
+    white-space: nowrap;
+}
+
+.equipment-input {
+    width: 236px;
+    height: 41px;
+    border: 2px solid #102f45;
+    font-size: 20px;
+    padding: 4px 10px;
+}
+
+.add-btn,
+.confirm-btn {
+    border: 2px solid #102f45;
+    background: #c7e8f6;
+    font-size: 22px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.equipment-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 20px;
+}
+
+.equipment-table th,
+.equipment-table td {
+    border: 1px solid #333;
+    padding: 5px 8px;
+    text-align: left;
+    height: 48px;
+}
+
+.equipment-table th:nth-child(1) { width: 19%; }
+.equipment-table th:nth-child(2) { width: 18%; }
+.equipment-table th:nth-child(3) { width: 18%; }
+.equipment-table th:nth-child(4) { width: 45%; }
+
+.actions {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.action-btn {
+    min-width: 106px;
+    height: 40px;
+    border: 2px solid #102f45;
+    background: #ededed;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.action-btn.active-status {
+    background: #ffff00;
+}
+
+.remove-btn {
+    min-width: 116px;
+    background: #88d14d;
+}
+
+.remove-btn:disabled {
+    background: #ffbf00;
+    color: #b9b9b9;
+    cursor: not-allowed;
+}
+
+.remove-btn.pending-remove {
+    background: #ff9298;
+    color: #111;
+}
+
+.message-area {
+    margin-top: 16px;
+    min-height: 62px;
+}
+
+.error-message {
+    color: red;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.confirmation {
+    font-size: 22px;
+}
+
+.confirmation strong {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.confirm-line {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.confirm-btn {
+    background: #ff9298;
+    min-width: 116px;
+}

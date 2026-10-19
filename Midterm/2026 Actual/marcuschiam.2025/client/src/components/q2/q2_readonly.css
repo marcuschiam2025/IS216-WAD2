@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+
+.q2-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.fairhub-navbar {
+  background-color: #213f62;
+  min-height: 62px;
+}
+
+.fairhub-navbar .navbar-brand {
+  color: white;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.fairhub-navbar .navbar-brand:hover,
+.fairhub-navbar .navbar-brand:focus {
+  color: white;
+}
+
+.navbar-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff600;
+  font-size: 2rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.fairhub-navbar .nav-link {
+  color: white;
+  padding-left: 0.9rem !important;
+  padding-right: 0.9rem !important;
+}
+
+.fairhub-navbar .nav-link:hover,
+.fairhub-navbar .nav-link:focus {
+  color: white;
+}
+
+.navbar-toggler {
+  border: 0;
+  padding: 0;
+  box-shadow: none !important;
+}
+
+.hamburger-lines {
+  width: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger-lines span {
+  display: block;
+  height: 5px;
+  background: white;
+}
+
+.page-title {
+  margin: 8px 0 4px;
+  color: #7030a0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.registration-area {
+  padding: 28px 32px;
+}
+
+.form-label {
+  margin-bottom: 7px;
+  font-size: 1.25rem;
+}
+
+.form-control,
+.form-select {
+  height: 46px;
+  border: 2px solid #102f45;
+  border-radius: 0;
+  font-size: 1.2rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #102f45;
+  box-shadow: none;
+}
+
+.form-select {
+  background-size: 18px 14px;
+}
+
+.register-column {
+  align-items: flex-end;
+  padding-bottom: 1px;
+}
+
+.register-btn {
+  min-width: 138px;
+  height: 54px;
+  margin-bottom: 0;
+  border: 2px solid #102f45;
+  border-radius: 10px;
+  background-color: #0879c1;
+  font-size: 1.2rem;
+}
+
+.register-btn:hover,
+.register-btn:focus {
+  background-color: #0879c1;
+  border-color: #102f45;
+}
+
+/* md only */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .registration-area {
+    padding-top: 10px;
+  }
+
+  .register-column {
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 4px;
+  }
+}
+
+/* below md */
+@media (max-width: 767.98px) {
+  .fairhub-navbar {
+    margin: 8px 7px 0;
+    min-height: 54px;
+  }
+
+  .page-title {
+    text-align: left !important;
+    margin: 8px 21px 14px;
+    font-size: 2rem;
+  }
+
+  .registration-area {
+    padding: 0 9px 10px;
+  }
+
+  .registration-area .row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0.75rem;
+  }
+
+  .form-label {
+    margin-bottom: 6px;
+  }
+
+  .register-column {
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .register-btn {
+    min-width: 124px;
+    height: 43px;
+  }
+}

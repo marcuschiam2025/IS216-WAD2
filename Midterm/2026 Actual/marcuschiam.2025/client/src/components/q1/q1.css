@@ -1,0 +1,79 @@
+/*
+  Name: Marcus Chiam Hao Yi
+  Email: marcuschiam.2025@computing.smu.edu.sg
+*/
+
+.navbarfh {
+    background-color: #1a3c5e;
+    color: white;
+    padding: 0 24px;
+    height: 56px;
+    /* Part A */
+    align-content: center;
+}
+
+.nav-links {
+    padding: 0px;
+    /* Part A */
+    list-style: none;
+    display: inline-flex;
+    gap: 24px;
+    right: 0;
+    float: right;
+    
+}
+
+.hero {
+    background-color: #d6e4f0;
+    padding: 60px 24px;
+    min-height: 200px;
+    /* Part B */
+    justify-items: center;
+    text-align: center;
+}
+
+.hero h1 { 
+    font-size: 2em;  
+    color: #1a3c5e; 
+    /* Part B */
+    padding-bottom: 10px;
+}
+.hero p  { 
+    color: #555;
+    /* Part B */
+    padding-bottom: 20px;
+}
+
+.layout {
+    /* Part C */
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 20px;
+    padding: 24px;;
+}
+
+.workshop-cards {
+    gap: 20px;
+    /* Part D */
+    display: grid;
+}
+
+
+.footer {
+    background-color: #1a3c5e;
+    color: white;
+    padding: 16px 24px;
+    /* Part E */
+    text-align: center;
+    display: grid;
+}
+
+.footer-links {
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    /* Part E */
+    margin: 0 auto;
+    display: inline-flex;
+    gap: 5px;
+}

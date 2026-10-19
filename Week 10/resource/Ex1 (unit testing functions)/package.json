@@ -1,0 +1,17 @@
+{
+  "name": "Ex1 (unit testing functions)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "pnpm vitest",
+    "test:simple": "pnpm vitest SimpleFunction.spec.js",
+    "test:more": "pnpm vitest MoreFunctions.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^5.0.3"
+  }
+}
