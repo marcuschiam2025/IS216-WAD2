@@ -83,6 +83,14 @@ describe('StudentGrade', () => {
   }) // Finish the passing-color test case.
 
   // TODO: the failing-color test case.
-  
+  it('use red text for failing grades', () => {
+    const wrapper = mount(StudentGrade, {
+      props: {
+        score: 45,
+      },
+    })
+    expect(wrapper.attributes('style')).toContain('red')
+  })
   
 }) // Finish the StudentGrade test suite.
+

@@ -57,6 +57,15 @@ describe('StudentProfile Integration', () => {
   }) // Finish the grade-C integration test.
 
   // TODO the grade-F integration test.
-  
+  it('display correct name and grade F for score 45', () => {
+    const wrapper = mount(StudentProfile, {
+      props: {
+        name: 'abc',
+        score: 45,
+      },
+    })
+    expect(wrapper.text()).toContain('abc')
+    expect(wrapper.text()).toContain('Grade: F')
+  })
  
 }) // Finish the StudentProfile integration test suite.

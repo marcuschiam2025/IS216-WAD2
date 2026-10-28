@@ -158,3 +158,8 @@ function getWeatherData() {
 }
 
 // TODO: write a test case for getWeatherData, e.g., that checks that the temp must be greater than 30 
+describe('TestSuite1: getWeatherData', () => {
+  it('Test1: checks that getWeatherData return a temp greater than 30', () => {
+    expect(getWeatherData()[0].result.temp).toBeGreaterThan(30);   
+  })
+})
